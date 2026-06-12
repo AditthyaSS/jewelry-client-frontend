@@ -10,30 +10,34 @@ gsap.registerPlugin(ScrollTrigger)
 
 const collections = [
   {
-    id: 'celestial-sovereignty',
-    name: 'The Royal Rajwada',
-    description: 'Crown jewels for the modern goddess',
+    id: 'shringar',
+    name: 'Shringar',
+    subtitle: '"Beauty"',
+    description: 'Sacred & special celebrations — weddings, festivals, grand occasions',
     image: '/images/collection-celestial.jpg',
     featured: true,
   },
   {
-    id: 'divine-lotus',
-    name: 'The Divine Polki',
-    description: 'Sacred blooms in precious metals',
+    id: 'pavitra',
+    name: 'Pavitra',
+    subtitle: '"Sacred"',
+    description: 'Heritage-inspired, intricate patterns, cultural legacy, classic motifs',
     image: '/images/collection-lotus.jpg',
     featured: false,
   },
   {
-    id: 'eternal-flame',
-    name: 'The Jadau Heritage',
-    description: 'Passion captured in gemstones',
+    id: 'nityam',
+    name: 'Nityam',
+    subtitle: '"Always"',
+    description: 'Effortless elegance for every day — lightweight, subtle, daily wear',
     image: '/images/collection-flame.jpg',
     featured: false,
   },
   {
-    id: 'moonlit-garden',
-    name: 'The Navratna Elegance',
-    description: 'Night blooms kissed by silver light',
+    id: 'hira',
+    name: 'Hira',
+    subtitle: '"Diamond"',
+    description: 'Premium diamond jewellery — solitaires, diamond-studded sets, luxury',
     image: '/images/collection-moonlit.jpg',
     featured: false,
   },
@@ -92,7 +96,7 @@ export function CollectionsShowcase() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative py-32 md:py-40 bg-beige">
+    <section id="collections" ref={sectionRef} className="relative py-32 md:py-40 bg-beige">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div ref={titleRef} className="text-center mb-20">

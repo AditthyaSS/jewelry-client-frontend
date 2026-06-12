@@ -73,6 +73,7 @@ export function HeroSection() {
 
   return (
     <section
+      id="home"
       ref={sectionRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
@@ -103,7 +104,7 @@ export function HeroSection() {
           className="mb-8"
         >
           <span className="inline-block font-sans text-xs tracking-[0.5em] text-gold uppercase border border-gold/30 px-6 py-2">
-            Est. 1847
+            For Over Three Decades
           </span>
         </motion.div>
 
@@ -111,25 +112,26 @@ export function HeroSection() {
           ref={headingRef}
           className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] tracking-[0.05em] text-onyx mb-8"
         >
-          <span className="word inline-block">Where</span>{' '}
-          <span className="word inline-block text-gradient-gold">Divinity</span>
+          <span className="word inline-block">Crafted with</span>{' '}
+          <span className="word inline-block text-gradient-gold">Love,</span>
           <br />
-          <span className="word inline-block">Meets</span>{' '}
-          <span className="word inline-block text-gradient-gold">Luxury</span>
+          <span className="word inline-block">Cherished for</span>{' '}
+          <span className="word inline-block text-gradient-gold">Generations</span>
         </h1>
 
         <p
           ref={subheadingRef}
           className="font-sans text-lg md:text-xl text-onyx/60 max-w-2xl mx-auto leading-relaxed mb-12"
         >
-          Ethereal jewellery collections inspired by Indian royal heritage, 
-          handcrafted with rare gemstones and precious metals for those who 
-          seek the extraordinary.
+          Where Art Meets Emotion. Discover the heart of Vinod Jewellers, 
+          where every piece tells a story of trust, tradition, 
+          and timeless craftsmanship.
         </p>
 
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <Link
-            href="/collections"
+          <a
+            href="#collections"
+            onClick={(e) => { e.preventDefault(); document.getElementById('collections')?.scrollIntoView({ behavior: 'smooth' }) }}
             className="group relative inline-flex items-center gap-4 font-sans text-sm tracking-[0.3em] text-onyx bg-gold hover:bg-gold-light px-10 py-4 uppercase transition-all duration-500 overflow-hidden"
           >
             <span className="relative z-10">Explore Collections</span>
@@ -143,10 +145,11 @@ export function HeroSection() {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
             <div className="absolute inset-0 bg-gold-light scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100" />
-          </Link>
+          </a>
 
-          <Link
-            href="/about"
+          <a
+            href="#about"
+            onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }) }}
             className="group inline-flex items-center gap-4 font-sans text-sm tracking-[0.3em] text-onyx border border-onyx/30 hover:border-gold hover:text-gold px-10 py-4 uppercase transition-all duration-500"
           >
             <span>Our Heritage</span>
@@ -159,7 +162,7 @@ export function HeroSection() {
             >
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-          </Link>
+          </a>
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Inter } from 'next/font/google'
+import { Cormorant_Garamond, Inter, Playfair_Display, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -17,14 +17,29 @@ const inter = Inter({
   display: 'swap',
 })
 
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  variable: '--font-montserrat',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Vrishva Aura | Ultra Premium Luxury Jewellery',
-  description: 'Where divinity meets luxury. Discover ethereal jewellery collections inspired by Indian royal heritage, handcrafted with rare gemstones and precious metals.',
-  keywords: ['luxury jewellery', 'divine jewellery', 'premium jewellery', 'heritage collection', 'indian jewellery', 'kundan polki'],
-  authors: [{ name: 'Vrishva Aura' }],
+  title: 'Vinod Jewellers | Crafted with Love, Cherished for Generations',
+  description: 'Where Art Meets Emotion. Discover the heart of Vinod Jewellers — for over three decades, a beacon of trust and craftsmanship in fine jewellery. Bengaluru.',
+  keywords: ['luxury jewellery', 'Vinod Jewellers', 'heritage jewellery', 'indian jewellery', 'gold jewellery', 'diamond jewellery', 'Bengaluru jewellery'],
+  authors: [{ name: 'Vinod Jewellers' }],
   openGraph: {
-    title: 'Vrishva Aura | Ultra Premium Luxury Jewellery',
-    description: 'Where divinity meets luxury. Discover ethereal jewellery collections inspired by Indian royal heritage.',
+    title: 'Vinod Jewellers | Crafted with Love, Cherished for Generations',
+    description: 'Where Art Meets Emotion. Discover the heart of Vinod Jewellers — for over three decades, a beacon of trust and craftsmanship.',
     type: 'website',
   },
 }
@@ -41,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable} bg-background`}>
+    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${playfair.variable} ${montserrat.variable} bg-background`}>
       <body className="font-sans antialiased overflow-x-hidden">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

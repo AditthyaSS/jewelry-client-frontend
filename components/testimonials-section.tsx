@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { motion, AnimatePresence } from 'framer-motion'
-import Image from 'next/image'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -12,26 +11,26 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Vrishva Aura has created pieces that transcend mere jewellery. They are heirlooms of the soul, passed down through generations with stories of love and legacy.",
-    author: 'Duchess of Beaumont',
-    title: 'Private Collector',
-    image: '/images/testimonial-1.jpg',
+      "The quality here is just something else. You can feel the trust in every detail. So glad I chose Vinod Jewellers — it just felt right.",
+    author: 'Ananya R.',
+    title: 'Bangalore',
+    initials: 'AR',
   },
   {
     id: 2,
     quote:
-      "Each piece from Vrishva Aura carries an aura of the divine. The craftsmanship is unparalleled, the designs speak to something eternal within us.",
-    author: 'Isabella Marchetti',
-    title: 'Curator, Museo del Gioiello',
-    image: '/images/testimonial-2.jpg',
+      "The designs are so graceful and refreshing. It's rare to find something that feels both modern and meaningful. Truly beautiful work.",
+    author: 'Meera S.',
+    title: 'Bangalore',
+    initials: 'MS',
   },
   {
     id: 3,
     quote:
-      "Working with Vrishva Aura on my bridal collection was a transformative experience. They understood my vision and elevated it beyond imagination.",
-    author: 'Victoria Chen',
-    title: 'Fashion Icon',
-    image: '/images/testimonial-3.jpg',
+      "The service was warm, genuine, and thoughtful. They really cared about what I wanted, and that made the whole experience memorable.",
+    author: 'Karthik M.',
+    title: 'Bangalore',
+    initials: 'KM',
   },
 ]
 
@@ -53,6 +52,7 @@ export function TestimonialsSection() {
 
   return (
     <section
+      id="testimonials"
       ref={sectionRef}
       className="relative py-32 md:py-40 bg-gradient-to-b from-beige-light to-beige overflow-hidden"
     >
@@ -99,14 +99,11 @@ export function TestimonialsSection() {
               </blockquote>
 
               <div className="flex flex-col items-center gap-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-gold/30">
-                  <Image
-                    src={testimonials[activeIndex].image}
-                    alt={testimonials[activeIndex].author}
-                    width={64}
-                    height={64}
-                    className="object-cover"
-                  />
+                {/* Initials avatar instead of image */}
+                <div className="w-16 h-16 rounded-full border-2 border-gold/30 flex items-center justify-center bg-gold/10">
+                  <span className="font-serif text-xl text-gold">
+                    {testimonials[activeIndex].initials}
+                  </span>
                 </div>
                 <div>
                   <p className="font-serif text-lg text-gold">

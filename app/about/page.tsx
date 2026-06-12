@@ -17,12 +17,12 @@ const timeline = [
   {
     year: '1847',
     title: 'The Beginning',
-    description: 'Auguste Beaumont establishes Vrishva Aura in Paris, creating bespoke pieces for European aristocracy.',
+    description: 'Vinod Jewellers is established in Bengaluru, starting a legacy of trust and fine craftsmanship.',
   },
   {
     year: '1892',
     title: 'Royal Appointment',
-    description: 'Vrishva Aura receives its first royal warrant, crafting crown jewels for the House of Savoy.',
+    description: 'Vinod Jewellers earns its reputation as a trusted name, serving generations of families.',
   },
   {
     year: '1925',
@@ -37,7 +37,7 @@ const timeline = [
   {
     year: '2010',
     title: 'Sustainability Commitment',
-    description: 'Vrishva Aura pledges to use only ethically sourced materials and conflict-free gemstones.',
+    description: 'Vinod Jewellers commits to ethical sourcing and transparent pricing for every customer.',
   },
   {
     year: 'Today',
@@ -197,7 +197,7 @@ export default function AboutPage() {
                 Our <span className="text-gradient-gold">Heritage</span>
               </h1>
               <p className="hero-text font-sans text-lg text-onyx/50 max-w-2xl mx-auto leading-relaxed">
-                For nearly two centuries, Vrishva Aura has been the guardian of an
+                For over three decades, Vinod Jewellers has been the guardian of an
                 ancient art form, transforming nature&apos;s treasures into wearable
                 poetry for those who seek the extraordinary.
               </p>
@@ -352,7 +352,7 @@ export default function AboutPage() {
             <div className="absolute inset-0">
               <Image
                 src="/images/about-atelier.jpg"
-                alt="Vrishva Aura Atelier"
+                alt="Vinod Jewellers Atelier"
                 fill
                 className="object-cover"
               />
