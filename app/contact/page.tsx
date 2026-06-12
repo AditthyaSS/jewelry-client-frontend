@@ -106,7 +106,7 @@ export default function ContactPage() {
             <div className="absolute inset-0 z-0">
               <Image
                 src="/images/testimonial-1.jpg"
-                alt="Vrishva Aura boutique"
+                alt="Vinod Jewellers boutique"
                 fill
                 className="object-cover object-top"
                 priority
@@ -167,7 +167,7 @@ export default function ContactPage() {
                       Flagship Salon
                     </h2>
                     <address className="font-sans text-onyx/60 leading-relaxed not-italic space-y-2">
-                      <p className="font-serif text-xl text-onyx mb-4">Vrishva Aura Paris</p>
+                      <p className="font-serif text-xl text-onyx mb-4">Vinod Jewellers Bengaluru</p>
                       <p>15 Place Vendôme</p>
                       <p>75001 Paris, France</p>
                       <p className="pt-4">Monday - Saturday: 10:30 AM - 7:00 PM</p>

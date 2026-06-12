@@ -219,7 +219,7 @@ export default function PremiumPage() {
 
               {/* Brand Name */}
               <h1 className="temple-hero-text mb-1" style={{ fontFamily: 'Samarkan, sans-serif', fontSize: 'clamp(2rem, 6vw, 6rem)', fontWeight: 400, letterSpacing: '0.05em', color: '#8b6914', textTransform: 'uppercase' }}>
-                Vrishva Aura
+                Vinod Jewellers
               </h1>
               <p className="temple-hero-text" style={{ fontFamily: 'Vireo, sans-serif', fontSize: '0.7rem', letterSpacing: '0.6em', color: '#a0822e', textTransform: 'uppercase', marginTop: '-10px' }}>
                 Jewellers

@@ -30,7 +30,7 @@ const processSteps = [
   },
   {
     title: 'The Awakening',
-    description: 'The final polish breathes life into the creation. It is the moment when metal and stone become more than the sum of their parts—they become Vrishva Aura.',
+    description: 'The final polish breathes life into the creation. It is the moment when metal and stone become more than the sum of their parts—they become Vinod Jewellers.',
     image: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80',
   },
 ]
@@ -119,7 +119,7 @@ export default function AtelierPage() {
             <div className="absolute inset-0 z-0">
               <img
                 src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=1600&q=80"
-                alt="Vrishva Aura Atelier"
+                alt="Vinod Jewellers Atelier"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-beige-light/90 via-beige-light/70 to-beige-light" />

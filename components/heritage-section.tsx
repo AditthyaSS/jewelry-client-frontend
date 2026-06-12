@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
-import Link from 'next/link'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -71,7 +70,7 @@ export function HeritageSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative py-32 md:py-40 bg-beige-light overflow-hidden">
+    <section id="about" ref={sectionRef} className="relative py-32 md:py-40 bg-beige-light overflow-hidden">
       {/* Decorative element */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gold/30 to-transparent" />
 
@@ -84,26 +83,28 @@ export function HeritageSection() {
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-onyx tracking-wide mb-8 leading-tight">
               A Legacy of{' '}
-              <span className="text-gradient-gold">Divine</span> Craftsmanship
+              <span className="text-gradient-gold">Trust</span>
             </h2>
             <p className="font-sans text-onyx/60 leading-relaxed mb-6">
-              Since 1847, Vrishva Aura has been the guardian of an ancient art
-              form, transforming the earth&apos;s most precious treasures into
-              wearable poetry. Our master artisans dedicate years to perfecting
-              each piece, ensuring that every creation embodies the divine
-              essence that has defined our house for generations.
+              For over three decades, Vinod Jewellers has been a beacon of trust 
+              and craftsmanship in the world of fine jewellery. Founded with a 
+              vision to blend tradition with modernity, we create pieces that 
+              celebrate life&apos;s most precious moments. From heirloom gold designs 
+              to contemporary diamond creations, our collections are crafted to 
+              resonate with modern women with strong values.
             </p>
             <p className="font-sans text-onyx/60 leading-relaxed mb-10">
-              From the royal courts of Europe to the ateliers of the world&apos;s
-              most discerning collectors, Vrishva Aura pieces have adorned those
-              who understand that true luxury transcends time.
+              At Vinod Jewellers, we believe jewellery is more than adornment — 
+              it&apos;s an expression of love, heritage, and individuality. Our artisans 
+              pour honesty and care into every piece, preserving the artistry of 
+              traditional craftsmanship while embracing modern aesthetics.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 mb-10 border-t border-gold/10 pt-10">
               <div>
                 <span className="block font-serif text-4xl md:text-5xl text-gradient-gold mb-2">
-                  177
+                  30+
                 </span>
                 <span className="font-sans text-xs tracking-[0.2em] text-onyx/40 uppercase">
                   Years of Legacy
@@ -111,24 +112,25 @@ export function HeritageSection() {
               </div>
               <div>
                 <span className="block font-serif text-4xl md:text-5xl text-gradient-gold mb-2">
-                  47
+                  5
                 </span>
                 <span className="font-sans text-xs tracking-[0.2em] text-onyx/40 uppercase">
-                  Master Artisans
+                  Collections
                 </span>
               </div>
               <div>
                 <span className="block font-serif text-4xl md:text-5xl text-gradient-gold mb-2">
-                  12
+                  1
                 </span>
                 <span className="font-sans text-xs tracking-[0.2em] text-onyx/40 uppercase">
-                  Global Ateliers
+                  Flagship Store
                 </span>
               </div>
             </div>
 
-            <Link
-              href="/about"
+            <a
+              href="#collections"
+              onClick={(e) => { e.preventDefault(); document.getElementById('collections')?.scrollIntoView({ behavior: 'smooth' }) }}
               className="group inline-flex items-center gap-4 font-sans text-sm tracking-[0.3em] text-gold hover:text-gold-light transition-colors duration-300 uppercase"
             >
               <span>Discover Our Story</span>
@@ -141,7 +143,7 @@ export function HeritageSection() {
               >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </Link>
+            </a>
           </div>
 
           {/* Image */}
@@ -166,10 +168,10 @@ export function HeritageSection() {
             {/* Badge */}
             <div className="absolute -bottom-6 -left-6 md:-left-12 bg-beige p-6 md:p-8 border border-gold/20">
               <span className="block font-serif text-5xl md:text-6xl text-gradient-gold">
-                1847
+                30+
               </span>
               <span className="font-sans text-[10px] tracking-[0.3em] text-onyx/40 uppercase">
-                Established
+                Years of Trust
               </span>
             </div>
           </div>

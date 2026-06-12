@@ -12,7 +12,7 @@ const featuredPieces = [
   {
     id: 'celestial-tiara',
     name: 'Kundan Maang Tikka',
-    collection: 'The Royal Rajwada',
+    collection: 'Shringar',
     price: '₹4,85,000',
     video: '/videos/piece-tiara.mp4',
     materials: ['18K Gold', 'Uncut Diamonds', 'Emeralds'],
@@ -20,7 +20,7 @@ const featuredPieces = [
   {
     id: 'divine-lotus-necklace',
     name: 'Polki Choker Necklace',
-    collection: 'The Divine Polki',
+    collection: 'Pavitra',
     price: '₹2,75,000',
     video: '/videos/piece-necklace.mp4',
     materials: ['22K Gold', 'Polki Diamonds', 'Pearls'],
@@ -28,7 +28,7 @@ const featuredPieces = [
   {
     id: 'eternal-flame-ring',
     name: 'Jadau Cocktail Ring',
-    collection: 'The Jadau Heritage',
+    collection: 'Nityam',
     price: '₹1,25,000',
     video: '/videos/piece-ring.mp4',
     materials: ['22K Gold', 'Ruby', 'Polki'],
@@ -88,7 +88,7 @@ export function FeaturedPieces() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative py-32 md:py-40 bg-beige">
+    <section id="signature" ref={sectionRef} className="relative py-32 md:py-40 bg-beige">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
